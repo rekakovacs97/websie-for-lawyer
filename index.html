@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { 
+            background: url(poza-main.jpg) no-repeat center center fixed;
+            margin: 10px;
+        }
+
+        .container-wrapp-header{
+            width: 100%;
+            display: flex;
+            position: fixed;
+            top: 0;
+            height: 80px;
+            z-index: 2;
+            
+        }
+
+        .logo{
+            width: 20%;
+        }
+
+        .menu{
+            width: 80%;
+        }
+
+        .style-ul{
+            list-style-type: none;
+            display: flex;
+            padding: 10px 0 0 0;
+        }
+
+        .navigation-links{
+            text-transform: uppercase;
+            font-family: cursive;
+            letter-spacing: 2px;
+            font-size: 22px;
+            padding: 10px 20px;
+            text-decoration:none;
+            color: rgb(236, 146, 28);
+        }
+        
+        .navigation-links:hover {
+            font-size: 23px;
+            border-radius: 25px;
+            background-color: whitesmoke;
+        }
+
+        .style-quote{
+            font-size: 25px;
+            font-family: cursive;
+            line-height: 1.8;
+            margin-left: 120px;
+            padding: 30px;
+        }
+        
+        .h2-p-container{
+            padding: 0 0 15px 15px;
+        }
+
+        .style-h2-despre-mine{
+            font-size: 25px;
+            color: #ea961c;
+            font-family: cursive;
+        }
+        
+        .style-p-despre-mine{
+            font-family: cursive;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .domenii{
+            margin-bottom: 10px;
+            display: inline-block;
+            margin-right: 10px;
+            width:calc((100% - 40px) / 3);
+            height: 245px;
+            overflow: hidden;
+        }
+
+        .container-section{
+            padding-top: 55px;
+        }
+    </style>
+</head>
+<body>
+    <header class="container-header">
+        <div class="container-wrapp-header">  
+            <div class="logo" >
+                <img src="logo3.png" alt="logo" width="250" >
+            </div>
+            <nav class="menu">
+                <ul class="style-ul">
+                    <li><a class="navigation-links" href="#despre-mine">Despre mine</a></li>
+                    <li><a class="navigation-links" href="#domenii">Domenii</a></li>
+                    <li><a class="navigation-links" href="#servicii">Servicii</a></li>
+                    <li><a class="navigation-links" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="container-section">
+        <p class="style-quote">„Nu există decât o replică la înfrângere și <br> aceasta este victoria!” <br>
+            -Winston Churchill-</p>
+        <div class="despre-mine" id="despre-mine">
+            <h2 >Despre mine</h2>
+            <div class="h2-p-container"> 
+                <h2 class="style-h2-despre-mine">Avocat Vasile Vaslui</h2>
+                <p class="style-p-despre-mine">Cabinetul de avocat Mihaela Drăghici din Bucureşti oferă consultaţii şi răspunde la cereri cu <br>
+                    caracter juridic, acordă asistare şi reprezentare juridică, redactare de acte juridice în<br> domeniile 
+                    : Drept Comercial, Dreptul Familiei,  Drept Civil, Dreptul Muncii.Recuperări <br> creanţe,clauze abuzive 
+                    in contractele de credit bancar. Avocat specialist în drept <br>civil, comercial  şi societar, dreptul 
+                    muncii, şi o vastă experienţă în dreptul<br> familiei - avocat divorţ, partaj, încredinţare  minor, 
+                    stabilire pensie alimentară minor,<br>etc.Proceduri judiciare în țările UE. Consultanţă juridică de 
+                    specialitate şi  reprezentare<br>  pentru cetăţenii romanicu domiciliul în străinatate.</p>
+            </div>
+            <div class="h2-p-container"> 
+                <h2 class="style-h2-despre-mine">Experienţă Avocat</h2>
+                <p class="style-p-despre-mine">Am o experienţă în profesia de avocat de peste 20 de ani.
+                    Decizia intrare  în Baroul <br> Bucuresti: 4155-30.09.99. Sunt avocat specializat în drept civil, drept comercial 
+                    şi<br> societar: corporate, suspendari firme, acte AGA, redactare procuri,  lichidări firme, <br>dizolvări firme, 
+                    reduceri sau majorări de capital social, cesiuni, schimbare sedii, puncte<br> de lucru, etc.  Ofer clientilor mei 
+                    in primul rand onestitate, profesionalism si garantia <br> unui om corect. Biroul de avocatura este 
+                    localizat in Bucuresti, sector 3.</p>
+            </div>
+            </div>
+        <div class="container-wrapp-domenii" id="domenii">
+            <h2>Domenii</h2>
+            <p>Domenii de expertiză şi consultanţă Avocat Vasile Vaslui: Drept civil, drept comercial, dreptul 
+                familiei, dreptul muncii, <br> contencios administrativ, înfiinţări/modificări societăţi comerciale.
+                Asistenţă şi reprezentare în faza de executare silită. <br> Contestaţii la executare.Redactare si atestare
+                acte statut act constitutiv, hotararea adunarii generale a membrilor, <br> consultanta, reprezentare 
+                in toate instantele din Bucuresti si din tara.</p>
+            <div class="domenii">
+                <h2>Dreptul familiei</h2>
+                <p>Relațiile de familie sunt
+                    un domeniu delicat în care orice nemulțumire poate genera foarte ușor un conflict ce implică 
+                    emoții și sentimente diverse.</p>
+            </div>
+            <div class="domenii">
+                <h2>Drept Comercial</h2>
+                <p>Înființări societăți comerciale, fuziuni societăți comerciale, lichidări și dizolvări societăți
+                    comerciale, asistență și reprezentare în fața instanței de judecată și de arbitraj.
+                </p>
+            </div>
+            <div class="domenii">
+                <h2>Drept Financiar Bancar</h2> 
+                <p>Reprezintă una dintre principalele noastre arii de practică, cu expertiză remarcabilă în 
+                    implementarea unor structuri complexe de finanțare.
+                </p>
+            </div>
+            <div class="domenii">
+                <h2>Drept Penal</h2>
+                <p>
+                    Implică reprezentarea clienților în dosarele penale sau asistarea acestora în toate tipurile de litigii,
+                    um ar fi: fraude economice, corupție, spionaj economic, infracțiuni informatice și  privind comerțul
+                    electronic, , crima organizată, abuz și neglijență în serviciu, spălarea banilor, etc.s
+                </p>
+            </div>
+            <div class="domenii">
+                <h2>Drept Civil</h2>
+                <p>Oricât de mult te-ai strădui să te comporți tot timpul exemplar, tot nu poți evita interacțiunea cu 
+                    alți oameni, iar de aici se poate ajunge la anumite pretenții civile, litigii civile și, prin urmare, la un
+                    avocat.
+                </p>
+            </div>
+            <div class="domenii">
+                <h2>GDPR</h2>
+                <p>Protecția datelor personale este un domeniu nou implementat prin Regulamentul general privind
+                    protecția datelor devenit lege în România începând cu 25 mai 2018. Sancțiunile pentru nerespectarea
+                    regulilor pot ajunge până la 4% din cifra de afaceri sau 20.000.000 euro.
+                </p>
+            </div>
+
+        </div>
+        <div class="servicii">
+
+        </div>
+        <div class="conract">
+
+        </div>
+    </section>
+</body>
+</html>
