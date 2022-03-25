@@ -8,7 +8,12 @@
     <style>
         body { 
             background: url(poza-main.jpg) no-repeat center center fixed;
-            margin: 10px;
+            margin: 10px 15px;
+            font-family: cursive;
+        }
+
+        .container-header{
+            margin-bottom: 100px;
         }
 
         .container-wrapp-header{
@@ -18,15 +23,16 @@
             top: 0;
             height: 80px;
             z-index: 2;
-            
+            background-color: #e3ded4;
         }
 
         .logo{
-            width: 20%;
+            width: 16%;
+            margin-top: 2px;
         }
 
         .menu{
-            width: 80%;
+            width: 84%;
         }
 
         .style-ul{
@@ -37,12 +43,11 @@
 
         .navigation-links{
             text-transform: uppercase;
-            font-family: cursive;
             letter-spacing: 2px;
             font-size: 22px;
             padding: 10px 20px;
             text-decoration:none;
-            color: rgb(236, 146, 28);
+            color: #d09551;
         }
         
         .navigation-links:hover {
@@ -53,47 +58,89 @@
 
         .style-quote{
             font-size: 25px;
-            font-family: cursive;
             line-height: 1.8;
             margin-left: 120px;
-            padding: 30px;
-        }
-        
-        .h2-p-container{
-            padding: 0 0 15px 15px;
+            padding: 35px 0 0 30px;
         }
 
         .style-h2-despre-mine{
             font-size: 25px;
-            color: #ea961c;
-            font-family: cursive;
+            color: #d09551;
         }
         
         .style-p-despre-mine{
-            font-family: cursive;
             line-height: 1.8;
             font-size: 18px;
         }
 
-        .domenii{
-            margin-bottom: 10px;
-            display: inline-block;
-            margin-right: 10px;
-            width:calc((100% - 40px) / 3);
-            height: 245px;
-            overflow: hidden;
+        .despre-mine{
+            padding-top: 80px;
+            margin-left: 25px;
         }
 
-        .container-section{
-            padding-top: 55px;
+        .container-wrapp-domenii {
+            padding-top: 80px;
         }
+
+        .main-h2{
+            font-size: 30px;
+            margin: 0;
+            color: #2c2a2a;
+        }
+        
+        .style-description-domenii {
+            line-height: 1.8;
+            font-size: 18px;
+            padding: 0 0 15px 15px;
+        }
+
+        .domenii {
+            border: 1px solid #d09551;
+            background-color: #f4f4f3;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 30px;
+            display: inline-block;
+            width:calc((100% - 360px) / 3);
+            height: 405px;
+            overflow: hidden;
+            opacity: 0.9;
+        }
+
+        .style-logo-domenii{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 15px;
+            width: 20%;
+        }
+
+        .style-h2-domenii {
+            text-align: center;
+        }
+        .style-p-domenii {
+            padding: 0 30px 20px 30px;
+            line-height: 1.8;
+            text-align: center;
+        }
+
+        .style-container-dl{
+            padding: 0 15px 15px 15px;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .style-dt{
+            color: #d09551;
+            padding-bottom: 10px;
+        }    
     </style>
 </head>
 <body>
     <header class="container-header">
         <div class="container-wrapp-header">  
             <div class="logo" >
-                <img src="logo3.png" alt="logo" width="250" >
+                <img src="logo5.png" alt="logo" width="200" >
             </div>
             <nav class="menu">
                 <ul class="style-ul">
@@ -109,7 +156,7 @@
         <p class="style-quote">„Nu există decât o replică la înfrângere și <br> aceasta este victoria!” <br>
             -Winston Churchill-</p>
         <div class="despre-mine" id="despre-mine">
-            <h2 >Despre mine</h2>
+            <h2 class="main-h2">Despre mine</h2>
             <div class="h2-p-container"> 
                 <h2 class="style-h2-despre-mine">Avocat Vasile Vaslui</h2>
                 <p class="style-p-despre-mine">Cabinetul de avocat Mihaela Drăghici din Bucureşti oferă consultaţii şi răspunde la cereri cu <br>
@@ -129,58 +176,82 @@
                     in primul rand onestitate, profesionalism si garantia <br> unui om corect. Biroul de avocatura este 
                     localizat in Bucuresti, sector 3.</p>
             </div>
-            </div>
+        </div>
         <div class="container-wrapp-domenii" id="domenii">
-            <h2>Domenii</h2>
-            <p>Domenii de expertiză şi consultanţă Avocat Vasile Vaslui: Drept civil, drept comercial, dreptul 
-                familiei, dreptul muncii, <br> contencios administrativ, înfiinţări/modificări societăţi comerciale.
-                Asistenţă şi reprezentare în faza de executare silită. <br> Contestaţii la executare.Redactare si atestare
-                acte statut act constitutiv, hotararea adunarii generale a membrilor, <br> consultanta, reprezentare 
+            <h2 class="main-h2"> Domenii</h2>
+            <p class="style-description-domenii">Domenii de expertiză şi consultanţă Avocat Vasile Vaslui: Drept civil, drept  comercial, dreptul <br>
+                familiei, dreptul  muncii,  contencios administrativ, înfiinţări/modificări societăţi comerciale.<br>
+                Asistenţă şi reprezentare în faza de executare silită.  Contestaţii la executare.Redactare si  <br>atestare
+                acte statut act constitutiv, hotararea adunarii generale a membrilor, consultanta, <br> reprezentare 
                 in toate instantele din Bucuresti si din tara.</p>
             <div class="domenii">
-                <h2>Dreptul familiei</h2>
-                <p>Relațiile de familie sunt
+                <img class="style-logo-domenii" src="logo.JPG" alt="logo">
+                <h2 class="style-h2-domenii">Dreptul familiei</h2>
+                <p class="style-p-domenii">Relațiile de familie sunt
                     un domeniu delicat în care orice nemulțumire poate genera foarte ușor un conflict ce implică 
                     emoții și sentimente diverse.</p>
             </div>
             <div class="domenii">
-                <h2>Drept Comercial</h2>
-                <p>Înființări societăți comerciale, fuziuni societăți comerciale, lichidări și dizolvări societăți
+                <img class="style-logo-domenii" src="logo.JPG" alt="logo">
+                <h2 class="style-h2-domenii">Drept Comercial</h2>
+                <p class="style-p-domenii">Înființări societăți comerciale, fuziuni societăți comerciale, lichidări și dizolvări societăți
                     comerciale, asistență și reprezentare în fața instanței de judecată și de arbitraj.
                 </p>
             </div>
             <div class="domenii">
-                <h2>Drept Financiar Bancar</h2> 
-                <p>Reprezintă una dintre principalele noastre arii de practică, cu expertiză remarcabilă în 
+                <img class="style-logo-domenii" src="logo.JPG" alt="logo">
+                <h2 class="style-h2-domenii">Drept Financiar Bancar</h2> 
+                <p class="style-p-domenii">Reprezintă una dintre principalele noastre arii de practică, cu expertiză remarcabilă în 
                     implementarea unor structuri complexe de finanțare.
                 </p>
             </div>
             <div class="domenii">
-                <h2>Drept Penal</h2>
-                <p>
+                <img class="style-logo-domenii" src="logo.JPG" alt="logo">
+                <h2 class="style-h2-domenii">Drept Penal</h2>
+                <p class="style-p-domenii">
                     Implică reprezentarea clienților în dosarele penale sau asistarea acestora în toate tipurile de litigii,
                     um ar fi: fraude economice, corupție, spionaj economic, infracțiuni informatice și  privind comerțul
                     electronic, , crima organizată, abuz și neglijență în serviciu, spălarea banilor, etc.s
                 </p>
             </div>
             <div class="domenii">
-                <h2>Drept Civil</h2>
-                <p>Oricât de mult te-ai strădui să te comporți tot timpul exemplar, tot nu poți evita interacțiunea cu 
+                <img class="style-logo-domenii" src="logo.JPG" alt="logo">
+                <h2 class="style-h2-domenii">Drept Civil</h2>
+                <p class="style-p-domenii">Oricât de mult te-ai strădui să te comporți tot timpul exemplar, tot nu poți evita interacțiunea cu 
                     alți oameni, iar de aici se poate ajunge la anumite pretenții civile, litigii civile și, prin urmare, la un
                     avocat.
                 </p>
             </div>
             <div class="domenii">
-                <h2>GDPR</h2>
-                <p>Protecția datelor personale este un domeniu nou implementat prin Regulamentul general privind
+                <img class="style-logo-domenii" src="logo.JPG" alt="logo">
+                <h2 class="style-h2-domenii">GDPR</h2>
+                <p class="style-p-domenii">Protecția datelor personale este un domeniu nou implementat prin Regulamentul general privind
                     protecția datelor devenit lege în România începând cu 25 mai 2018. Sancțiunile pentru nerespectarea
                     regulilor pot ajunge până la 4% din cifra de afaceri sau 20.000.000 euro.
                 </p>
             </div>
 
         </div>
-        <div class="servicii">
-
+        <div class="servicii" id="servicii">
+            <h2 class="main-h2">Servicii</h2>
+            <dl>        
+                <div class="style-container-dl">
+                    <dt class="style-dt">Verificăm documentele </dt>
+                    <dd class="style-dd">Ne asigurăm că ai toate actele necesare și că acestea corespund cerințelor.</dd>
+                </div>
+                <div class="style-container-dl">
+                    <dt class="style-dt">Depunem actele</dt>
+                    <dd class="style-dd">Te scăpăm de stresul programărilor, ghișeelor și statului la coadă.</dd>
+                </div>
+                <div class="style-container-dl">
+                    <dt class="style-dt">Urmărim procesarea documentelor</dt>
+                    <dd class="style-dd">Verificăm statusul solicitării și te ținem la curent cu eventualele modificări.</dd>
+                </div>
+                <div  class="style-container-dl">
+                    <dt class="style-dt">Ridicăm documentele</dt>
+                    <dd class="style-dd">Vom ridica documentele și te vom anunța când poți intra în posesia lor.</dd>
+                </div>
+            </dl>
         </div>
         <div class="conract">
 
