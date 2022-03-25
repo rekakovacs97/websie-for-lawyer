@@ -8,14 +8,25 @@
     <style>
         body { 
             background: url(poza-main.jpg) no-repeat center center fixed;
-            margin: 10px 15px;
+            margin: 10px 20px;
             font-family: cursive;
+        }
+        @media only screen and (min-width: 576px) {
+           body {
+            margin: 10px 20px;
+           } 
         }
 
         .main-h2{
-            font-size: 30px;
+            font-size: 20px;
             margin: 0;
             color: #2c2a2a;
+        }
+        
+        @media only screen and (min-width: 576px) {
+           .main-h2 {
+            font-size: 25px;
+           } 
         }
 
         .container-header{
@@ -33,27 +44,56 @@
         }
 
         .logo{
+            display: none;
+        }
+
+        @media only screen and (min-width: 576px) {
+         .logo{
+            display: none;
+            }   
+        }
+
+        @media only screen and (min-width: 768px) {
+        .logo {
+            display: block;
             width: 16%;
             margin-top: 4px;
+            }
         }
 
         .menu{
-            width: 84%;
+            width: 100%;
+        }
+        @media only screen and (min-width: 576px) {
+            .menu {
+                width: 84%;
+            }
         }
 
         .style-ul{
             list-style-type: none;
             display: flex;
-            padding: 10px 0 0 0;
+            padding: 0;
+        }
+        @media only screen and (min-width: 576px) {
+            .style-ul{
+                padding: 10px 0 0 0; 
+            }
         }
 
         .navigation-links{
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 22px;
+            font-size: 19px;
             padding: 10px 20px;
             text-decoration:none;
             color: #d09551;
+        }
+
+        @media only screen and (min-width: 576px) {
+            .navigation-links{
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: 22px;
+            }
         }
         
         .navigation-links:hover {
@@ -61,56 +101,101 @@
             border-radius: 25px;
             background-color: whitesmoke;
         }
-
+        @media only screen and (min-width: 576px) {
+            .navigation-links:hover{
+                font-size: 20px;          
+            }
+        }
 
         .style-quote{
+            font-size: 19px;
+            line-height: 1.6;
+            margin-left: 39px;
+            padding: 10px 0 0 0px;
+            font-family: monospace;
+        }
+        @media only screen and (min-width: 576px) {
+           .style-quote{
             font-size: 25px;
             line-height: 1.8;
             margin-left: 120px;
-            padding: 50px 0 0 30px;
-            font-family: monospace;
+            padding: 50px 0 0 30px; 
+            }
         }
 
-
-
         .style-h2-despre-mine{
-            font-size: 25px;
+            font-size: 20px;
             color: #d09551;
+        }
+        @media only screen and (min-width: 576px) {
+           .style-h2-despre-mine{
+            font-size: 25px;     
+            }
         }
         
         .style-p-despre-mine{
+            line-height: 1.6;
+            font-size: 18px;
+            background-color: #f4f4f3;
+            opacity: 0.9; 
+            padding: 5px;    
+        }
+
+        @media only screen and (min-width: 576px) {
+           .style-p-despre-mine{   
             line-height: 1.8;
-            font-size: 20px;
+            font-size: 20px; 
+            background-color: transparent;	
+            }
         }
 
-        .despre-mine{
+        @media only screen and (min-width: 576px) {
+        .despre-mine{   
             padding-top: 90px;
-            margin-left: 25px;
+            margin-left: 15px;
+            }
         }
 
-        .container-wrapp-domenii {
+        @media only screen and (min-width: 576px) {
+        .container-wrapp-domenii { 
             padding-top: 90px;
+            }
         }
 
-        
         .style-description-domenii {
             line-height: 1.8;
-            font-size: 20px;
-            padding: 0 0 15px 15px;
+            font-size: 19px;
+            padding: 5px;    
+            background-color: #f4f4f3;
+            opacity: 0.9; 
         }
 
+        @media only screen and (min-width: 576px) {
+        .style-description-domenii { 
+            font-size: 20px;
+            padding: 0 0 15px 15px;
+            background-color: transparent;	
+            }
+        }
 
         .domenii {
             border: 1px solid #d09551;
             background-color: #f4f4f3;
-            margin-left: 50px;
-            margin-right: 50px;
             margin-bottom: 30px;
             display: inline-block;
-            width:calc((100% - 360px) / 3);
-            height: 530px;
+            width: calc((100% - 77px) / 2 );
+            height: 678px;
             overflow: hidden;
             opacity: 0.9;
+        }
+
+        @media only screen and (min-width: 576px) {
+        .domenii {
+            margin-left: 50px;
+            margin-right: 50px;
+            width:calc((100% - 360px) / 3);
+            height: 530px;
+            }
         }
 
         .style-logo-domenii{
@@ -131,14 +216,28 @@
             font-size: 19px;
         }
 
-        .servicii {
+        @media only screen and (min-width: 576px) {
+        .servicii{
             padding-top: 90px;
+            }
         }
-        
+
         .style-container-dl{
+            margin-bottom: 15px;
+            line-height: 1.8;
+            font-size: 19px;
+            padding: 5px;    
+            background-color: #f4f4f3;
+            opacity: 0.9; 
+        }
+
+        @media only screen and (min-width: 576px) {
+        .style-container-dl{
+            margin-bottom: 10px;
             padding: 0 15px 15px 15px;
             font-size: 20px;
-            margin-bottom: 10px;
+            background-color: transparent;	
+            }
         }
 
         .style-dt{
@@ -173,15 +272,28 @@
             color: #d09551;
             padding-left: 15px;
         }
+        
 
+        .style-p-contact{
+            font-size: 18px; 
+            padding: 5px;
+        }
+
+        @media only screen and (min-width: 576px) {
         .style-p-contact{
             font-size: 20px;
             margin-top: 0;
             padding-left: 15px;
+            }
         }
 
         .contact-cont{
+        }
+
+        @media only screen and (min-width: 576px) {
+        .contact-cont{
             padding-top: 90px;
+            }
         }
 
 
